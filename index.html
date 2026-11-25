@@ -136,7 +136,7 @@ footer{position:relative;z-index:10;text-align:center;font-family:var(--mono);fo
 <section class="sec hero in" data-c="#ff3d2e" data-name="Recon" data-side="Open Report">
  <div class="heroin">
   <div class="status">&gt; Status: Currently at Greenstone Meats</div>
-  <h1 class="name">Mehmet<br><span class="o">Ugurlu</span></h1>
+  <h1 class="name">Michael<br><span class="o">Ugurlu</span></h1>
   <div class="roles">IT Security Analyst <i>/</i> SOC Analyst <i>/</i> Security+ Certified</div>
   <div class="sub">Niagara region · Toronto, ON · Languages: <em>EN</em> / TR / ES</div>
   <div class="btns">
@@ -302,7 +302,7 @@ footer{position:relative;z-index:10;text-align:center;font-family:var(--mono);fo
 <div class="ov" id="ov">
  <form class="modal" id="req">
   <h3>Request a call or meeting</h3>
-  <p>This page can't book calendar slots. It prepares an email, and Mehmet will confirm by reply.</p>
+  <p>This page can't book calendar slots. It prepares an email, and Michael will confirm by reply.</p>
   <label>Name</label><input id="rn" required>
   <label>Work email</label><input id="re" type="email" required>
   <label>Conversation type</label><select id="rt"><option>Phone call</option><option>Video meeting</option><option>Either</option></select>
@@ -353,7 +353,7 @@ const io=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting){
 secs.forEach(s=>io.observe(s));
 /* ---------- bot ---------- */
 const KB=[
- {k:['current','now','greenstone','today','present','role','job','work'],a:'Right now Mehmet is IT Security Analyst at <b>Greenstone Meats</b> (Toronto, ON), since September 8, 2026. He is the sole security analyst: MFA rollout with Entra ID Conditional Access, Intune endpoint policies (Attack Surface Reduction, USB control), Defender email protection, phishing simulations and vulnerability management.'},
+ {k:['current','now','greenstone','today','present','role','job','work'],a:'Right now Michael is IT Security Analyst at <b>Greenstone Meats</b> (Toronto, ON), since September 8, 2026. He is the sole security analyst: MFA rollout with Entra ID Conditional Access, Intune endpoint policies (Attack Surface Reduction, USB control), Defender email protection, phishing simulations and vulnerability management.'},
  {k:['fallsview','casino','niagara casinos','previous','last job'],a:'At <b>Fallsview Casino Resort &amp; Niagara Casinos</b> (March 2025 to September 1, 2026) he monitored ReliaQuest GreyMatter SIEM, triaged Defender, SentinelOne, Cisco Umbrella, Cisco Secure Email and Forcepoint DLP alerts, handled phishing and endpoint incidents, and tracked Tenable findings to remediation.'},
  {k:['cybernow','soc analyst','virginia','sterling','dec 2023'],a:'At <b>CyberNow Labs</b> (Dec 2023 to Mar 2025) he worked as a SOC analyst: SIEM logging and alerting, McAfee DLP, SentinelOne, Defender, ServiceNow SIR / Vulnerability Response, Azure and Docker, plus Kali and Wireshark labs.'},
  {k:['experience','career','history','background','years'],a:'Timeline: Greenstone Meats (Sep 2026 to now) → Fallsview / Niagara Casinos (Mar 2025 to Sep 2026) → CyberNow Labs (Dec 2023 to Mar 2025) → IT support roles in Toronto (2020 to 2023) → Information Security &amp; DB Administrator in Istanbul (2016 to 2018). He started in networking, moved to IT support and then to cybersecurity.'},
@@ -367,10 +367,10 @@ const KB=[
  {k:['language','speak','turkish','spanish','english'],a:'Languages listed on the resume: Turkish and Spanish (fluent), and he works in English.'},
  {k:['award','recogni'],a:'Best Technical Instructor in Antalya City, Turkey, awarded by the Ministry of Education of Turkey in 2012.'},
  {k:['where','location','based','toronto','live','relocat'],a:'Based in the Niagara region of Ontario; current role is in Toronto, ON.'},
- {k:['call','meeting','meet','schedule','interview','book','arrange'],a:'Happy to talk. <a href="#" data-req>Request a call or meeting</a> and the page will prepare an email; Mehmet confirms by reply.'},
+ {k:['call','meeting','meet','schedule','interview','book','arrange'],a:'Happy to talk. <a href="#" data-req>Request a call or meeting</a> and the page will prepare an email; Michael confirms by reply.'},
  {k:['contact','email','mail','linkedin','github','reach','phone'],a:'Email: <a href="mailto:ugurlu.michael@gmail.com">ugurlu.michael@gmail.com</a><br>LinkedIn: <a href="https://linkedin.com/in/michaelugurlu" target="_blank" rel="noopener">linkedin.com/in/michaelugurlu</a><br>GitHub: <a href="https://github.com/ugurlumNIA" target="_blank" rel="noopener">ugurlumNIA</a>'},
- {k:['hello','hi ','hey','selam','merhaba'],a:'Hi! Ask me about Mehmet\'s experience, tools, certifications, education or how to contact him.'},
- {k:['who','about','summary','profile','introduce'],a:'Mehmet Michael Ugurlu is a cybersecurity analyst (Security+ certified) with SOC, incident response, email security, DLP and vulnerability management experience in gaming, hospitality and food manufacturing. Currently the sole security analyst at Greenstone Meats.'}
+ {k:['hello','hi ','hey','selam','merhaba'],a:'Hi! Ask me about Michael\'s experience, tools, certifications, education or how to contact him.'},
+ {k:['who','about','summary','profile','introduce'],a:'Michael Ugurlu is a cybersecurity analyst (Security+ certified) with SOC, incident response, email security, DLP and vulnerability management experience in gaming, hospitality and food manufacturing. Currently the sole security analyst at Greenstone Meats.'}
 ];
 const msgs=document.getElementById('msgs'),bot=document.getElementById('bot'),inp=document.getElementById('inp');
 function add(t,w,html){const d=document.createElement('div');d.className='m '+w;html?d.innerHTML=t:d.textContent=t;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;return d}
@@ -382,7 +382,7 @@ function ask(q){if(!q.trim())return;add(q,'u');const t=add('…','b');t.classLis
 document.getElementById('form').onsubmit=e=>{e.preventDefault();ask(inp.value);inp.value=''};
 const quick=document.getElementById('quick');
 ['Current role','Skills & tools','Certifications','Arrange a call','Contact details'].forEach(q=>{const b=document.createElement('button');b.textContent=q;b.type='button';b.onclick=()=>ask(q);quick.appendChild(b)});
-function openBot(){bot.classList.add('open');if(!msgs.children.length)add('Hi, I\'m the resume assistant. I answer only from the details on this page. What would you like to know about Mehmet?','b');inp.focus()}
+function openBot(){bot.classList.add('open');if(!msgs.children.length)add('Hi, I\'m the resume assistant. I answer only from the details on this page. What would you like to know about Michael?','b');inp.focus()}
 document.getElementById('fab').onclick=()=>bot.classList.contains('open')?bot.classList.remove('open'):openBot();
 document.getElementById('xBot').onclick=()=>bot.classList.remove('open');
 document.querySelectorAll('[data-bot]').forEach(b=>b.onclick=openBot);
