@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Michael Ugurlu · IT Security Analyst</title>
-<meta name="description" content="Interactive resume of Mehmet Michael Ugurlu, IT Security Analyst (Security+ certified): SOC operations, incident response, Microsoft security stack.">
+<meta name="description" content="Interactive resume of Michael Ugurlu, IT Security Analyst (Security+ certified): SOC operations, incident response, Microsoft security stack.">
 <meta name="theme-color" content="#0a0707">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -289,7 +289,7 @@ footer{position:relative;z-index:10;text-align:center;font-family:var(--mono);fo
  </div>
 </section>
 </main>
-<footer>// END OF REPORT · MEHMET MICHAEL UGURLU · THE RESUME BOT ANSWERS ONLY FROM THIS PAGE</footer>
+<footer>// END OF REPORT · MICHAEL UGURLU · THE RESUME BOT ANSWERS ONLY FROM THIS PAGE</footer>
 
 <button class="fab" id="fab" aria-label="Open resume bot">✳</button>
 <div class="bot" id="bot" role="dialog" aria-label="Resume assistant">
@@ -366,6 +366,7 @@ const KB=[
  {k:['educat','degree','school','universit','college','masters','msc','study','diploma'],a:'M.Sc. Digital Forensics &amp; Information Security (Niagara University, expected 2026); Cyber Security Analyst diploma (Willis College, 2021 to 2022); Cyber Security certificate (York University, 2019); B.Sc. Information Technology (Yildiz Technical University, 2003).'},
  {k:['language','speak','turkish','spanish','english'],a:'Languages listed on the resume: Turkish and Spanish (fluent), and he works in English.'},
  {k:['award','recogni'],a:'Best Technical Instructor in Antalya City, Turkey, awarded by the Ministry of Education of Turkey in 2012.'},
+ {k:['citizen','citizenship','work permit','authoriz','authoris','visa','sponsor','status','eligible','legally','pr '],a:'Michael is a <b>Canadian citizen</b>. He can work for any employer in Canada with no restrictions, and no work permit or visa sponsorship is needed.'},
  {k:['where','location','based','toronto','live','relocat'],a:'Based in the Niagara region of Ontario; current role is in Toronto, ON.'},
  {k:['call','meeting','meet','schedule','interview','book','arrange'],a:'Happy to talk. <a href="#" data-req>Request a call or meeting</a> and the page will prepare an email; Michael confirms by reply.'},
  {k:['contact','email','mail','linkedin','github','reach','phone'],a:'Email: <a href="mailto:ugurlu.michael@gmail.com">ugurlu.michael@gmail.com</a><br>LinkedIn: <a href="https://linkedin.com/in/michaelugurlu" target="_blank" rel="noopener">linkedin.com/in/michaelugurlu</a><br>GitHub: <a href="https://github.com/ugurlumNIA" target="_blank" rel="noopener">ugurlumNIA</a>'},
@@ -377,8 +378,21 @@ function add(t,w,html){const d=document.createElement('div');d.className='m '+w;
 function answer(q){const s=' '+q.toLowerCase()+' ';let best=null,bs=0;
  KB.forEach(e=>{let n=0;e.k.forEach(k=>{if(s.includes(k))n+=k.length>3?2:1});if(n>bs){bs=n;best=e}});
  return best?best.a:'I can only answer from what is on this page. Try asking about his current role, tools, certifications, education or contact details, or <a href="mailto:ugurlu.michael@gmail.com">email him</a> directly.'}
-function ask(q){if(!q.trim())return;add(q,'u');const t=add('…','b');t.classList.add('typing');
- setTimeout(()=>{t.classList.remove('typing');t.innerHTML=answer(q);msgs.scrollTop=msgs.scrollHeight},450)}
+/* Set BOT_API to your Cloudflare Worker URL to enable the AI-powered bot. Leave '' for scripted answers only. */
+const BOT_API='';
+const hist=[];
+function esc(t){return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+function linkify(t){return esc(t).replace(/(https?:\/\/[^\s<]+)/g,'<a href="$1" target="_blank" rel="noopener">$1</a>').replace(/([\w.+-]+@[\w-]+\.[\w.]+)/g,'<a href="mailto:$1">$1</a>').replace(/\n/g,'<br>')}
+async function ask(q){if(!q.trim())return;add(q,'u');const t=add('…','b');t.classList.add('typing');
+ let html=null;
+ if(BOT_API){try{
+  const ctl=new AbortController(),to=setTimeout(()=>ctl.abort(),15000);
+  const r=await fetch(BOT_API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:[...hist,{role:'user',content:q}]}),signal:ctl.signal});
+  clearTimeout(to);
+  if(r.ok){const d=await r.json();if(d.reply){html=linkify(d.reply);hist.push({role:'user',content:q},{role:'assistant',content:d.reply})}}
+ }catch(e){}}
+ if(html===null){await new Promise(r=>setTimeout(r,450));html=answer(q)}
+ t.classList.remove('typing');t.innerHTML=html;msgs.scrollTop=msgs.scrollHeight}
 document.getElementById('form').onsubmit=e=>{e.preventDefault();ask(inp.value);inp.value=''};
 const quick=document.getElementById('quick');
 ['Current role','Skills & tools','Certifications','Arrange a call','Contact details'].forEach(q=>{const b=document.createElement('button');b.textContent=q;b.type='button';b.onclick=()=>ask(q);quick.appendChild(b)});
