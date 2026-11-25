@@ -1,7 +1,7 @@
-Knowledge about Mehmet Michael Ugurlu
+Knowledge about Michael Ugurlu
 (The resume bot answers only from this file. Edit it on GitHub, commit, and the bot learns it within about 5 minutes. Write plain facts, one per line.)
 Basics
-Full name: Mehmet Michael Ugurlu (goes by Michael professionally).
+Preferred name: Michael Ugurlu. Always call him Michael. (His legal first name is Mehmet; he uses Michael at work.)
 Title: IT Security Analyst, CompTIA Security+ certified.
 Location: Niagara region, Ontario, Canada. Current job is in Toronto, ON.
 Email: ugurlu.michael@gmail.com
@@ -54,11 +54,14 @@ Cyber Security Analyst diploma, Willis College (May 2021 to Aug 2022).
 Cyber Security Fundamentals and Advanced certificate, York University (Jan 2019).
 B.Sc. Information Technology, Yildiz Technical University (1998 to 2003).
 Award: Best Technical Instructor in Antalya City, Turkey, from the Ministry of Education of Turkey (2012).
+Work authorization
+Michael is a Canadian citizen.
+He can work for any employer in Canada with no restrictions; no work permit or visa sponsorship is needed.
 Availability and preferences
 (Add here: Are you open to new roles? Contract or full-time? Remote, hybrid or on-site? Notice period? Willing to relocate?)
 Projects and extras
 (Add here: home lab, side projects, GitHub projects, write-ups, talks. Only things you want public.)
 Q&A you want the bot to answer a specific way
-Q: (example) What is Mehmet's biggest strength?  A: (your answer)
+Q: (example) What is Michael's biggest strength?  A: (your answer)
 Do not discuss
 (Add here: topics the bot should avoid, e.g. employer-internal details, salary.)
