@@ -3,7 +3,7 @@ Knowledge about Michael Ugurlu
 Basics
 Preferred name: Michael Ugurlu. Always call him Michael. (His legal first name is Mehmet; he uses Michael at work.)
 Title: IT Security Analyst, CompTIA Security+ certified.
-Location: Niagara region, Ontario, Canada. Current job is in Toronto, ON.
+Location: Toronto, Ontario, Canada. Current job is in Toronto, ON.
 Email: ugurlu.michael@gmail.com
 LinkedIn: linkedin.com/in/michaelugurlu
 GitHub: github.com/ugurlumNIA
