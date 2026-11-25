@@ -1,101 +1,400 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101510">
-  <meta name="description" content="Meet Mehmet Michael Ugurlu — explore his resume and get in touch about an opportunity.">
-  <title>Mehmet Michael Ugurlu — Interactive Resume</title>
-  <style>
-    :root{color-scheme:dark;--bg:#101510;--panel:#171e18;--panel2:#1d261e;--text:#f2f1e9;--muted:#a9b0a5;--green:#c7f36b;--green2:#9cc947;--line:#303a30;--orange:#ffbd83;--radius:22px;--shadow:0 24px 80px #0005;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 86% 4%,#293923 0,transparent 28rem),var(--bg);color:var(--text);line-height:1.55}a{color:inherit}button,input,textarea,select{font:inherit}button,a{ -webkit-tap-highlight-color:transparent}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.topbar{height:74px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff12}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:700;letter-spacing:-.03em}.brand-mark{display:grid;place-items:center;width:34px;height:34px;border-radius:11px;background:var(--green);color:#18210e;font-size:17px}.nav{display:flex;gap:25px;align-items:center}.nav a{font-size:13px;color:var(--muted);text-decoration:none}.nav a:hover{color:var(--green)}.nav .nav-cta{padding:9px 14px;border:1px solid var(--line);border-radius:999px;color:var(--text)}.hero{padding:91px 0 75px;display:grid;grid-template-columns:1.25fr .75fr;gap:54px;align-items:center}.eyebrow{display:flex;align-items:center;gap:9px;color:var(--green);font-size:12px;font-weight:700;letter-spacing:.13em;text-transform:uppercase}.pulse{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px #c7f36b20}h1{font-size:clamp(43px,7vw,76px);line-height:.98;letter-spacing:-.065em;margin:19px 0 22px;max-width:680px}h1 span{color:var(--green)}.intro{max-width:600px;color:#c0c6ba;font-size:17px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.button{border:0;border-radius:999px;padding:13px 19px;font-weight:700;text-decoration:none;cursor:pointer;display:inline-flex;gap:9px;align-items:center;justify-content:center;transition:transform .18s,background .18s}.button:hover{transform:translateY(-2px)}.primary{background:var(--green);color:#17200f}.primary:hover{background:#d6ff82}.secondary{border:1px solid #4a5548;color:var(--text);background:#ffffff08}.hero-card{position:relative;padding:28px;border:1px solid #ffffff17;background:linear-gradient(145deg,#202a20,#141a14);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}.hero-card:after{content:"";position:absolute;width:190px;height:190px;border-radius:50%;background:#c7f36b10;right:-80px;top:-83px}.card-kicker{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.12em}.card-name{font-size:24px;font-weight:750;letter-spacing:-.04em;margin:8px 0 3px}.card-sub{color:var(--muted);font-size:14px}.card-divider{height:1px;background:var(--line);margin:22px 0}.quick-row{display:flex;justify-content:space-between;gap:14px;margin:12px 0;font-size:13px}.quick-row span:first-child{color:var(--muted)}.quick-row strong{font-weight:600;text-align:right}.section{padding:50px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:23px}.section-label{color:var(--green);font-size:11px;font-weight:750;letter-spacing:.14em;text-transform:uppercase}.section h2{font-size:clamp(27px,4vw,39px);letter-spacing:-.05em;line-height:1.1;margin:7px 0 0}.section-note{font-size:13px;color:var(--muted);max-width:360px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.tile{min-height:180px;padding:22px;border-radius:18px;border:1px solid var(--line);background:#ffffff04;transition:border .2s,transform .2s}.tile:hover{border-color:#788b60;transform:translateY(-3px)}.tile-icon{font-size:20px;color:var(--green)}.tile h3{margin:17px 0 6px;font-size:16px;letter-spacing:-.02em}.tile p{margin:0;color:var(--muted);font-size:13px}.tile .tag{display:inline-block;margin-top:15px;border:1px solid #394439;border-radius:999px;padding:5px 9px;color:#d4deca;font-size:11px}.notice{padding:15px 17px;border-radius:14px;border:1px solid #646346;background:#d6d26a0b;color:#d8d6b7;font-size:13px;margin-top:16px}.contact-band{margin:46px 0 75px;padding:30px;border-radius:var(--radius);border:1px solid #526143;background:linear-gradient(110deg,#20291c,#1a211a);display:flex;align-items:center;justify-content:space-between;gap:22px}.contact-band h2{font-size:25px;letter-spacing:-.04em;margin:0 0 5px}.contact-band p{margin:0;color:var(--muted);font-size:14px}.contact-links{display:flex;gap:10px;flex-wrap:wrap}.footer{border-top:1px solid #ffffff12;padding:25px 0 40px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:16px}.footer a{color:var(--green);text-decoration:none}.chat-launcher{position:fixed;right:24px;bottom:23px;z-index:5;box-shadow:0 8px 30px #0007}.chat-launcher .button{padding:13px 18px}.chat{position:fixed;z-index:6;right:24px;bottom:86px;width:min(385px,calc(100vw - 32px));height:min(570px,calc(100dvh - 120px));border-radius:22px;overflow:hidden;border:1px solid #52604d;background:#151b15;box-shadow:0 24px 90px #000b;display:none;grid-template-rows:auto 1fr auto}.chat.open{display:grid;animation:pop .18s ease-out}@keyframes pop{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:none}}.chat-head{padding:16px 17px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:#1b231b}.bot-id{display:flex;gap:11px;align-items:center}.bot-avatar{width:37px;height:37px;border-radius:13px;display:grid;place-items:center;background:var(--green);color:#1a2410;font-weight:800}.bot-title{font-size:14px;font-weight:750}.bot-status{font-size:11px;color:var(--muted)}.close-chat{background:none;border:0;color:var(--muted);font-size:22px;cursor:pointer}.messages{overflow:auto;padding:16px;display:flex;flex-direction:column;gap:11px}.message{max-width:88%;padding:11px 13px;border-radius:15px;font-size:13px;white-space:pre-wrap;overflow-wrap:anywhere}.message.bot{background:#232c23;color:#e8ebdf;border-bottom-left-radius:5px;align-self:flex-start}.message.user{background:var(--green);color:#18200f;border-bottom-right-radius:5px;align-self:flex-end}.suggestions{display:flex;gap:7px;flex-wrap:wrap}.suggestion{background:transparent;border:1px solid #465342;border-radius:999px;padding:7px 10px;color:#d6ddce;font-size:11px;cursor:pointer}.suggestion:hover{border-color:var(--green);color:var(--green)}.chat-compose{padding:12px;border-top:1px solid var(--line);display:flex;gap:8px}.chat-compose input{min-width:0;flex:1;background:#0f140f;border:1px solid #3a4439;border-radius:12px;padding:11px 12px;color:var(--text);outline:none}.chat-compose input:focus{border-color:var(--green)}.send{border:0;border-radius:12px;background:var(--green);color:#17200f;padding:0 15px;font-weight:800;cursor:pointer}.modal-backdrop{position:fixed;inset:0;z-index:8;background:#000a;display:none;place-items:center;padding:18px}.modal-backdrop.open{display:grid}.modal{width:min(480px,100%);background:#171e18;border:1px solid #53634b;border-radius:22px;padding:25px;box-shadow:var(--shadow)}.modal-top{display:flex;justify-content:space-between;align-items:start}.modal h2{font-size:25px;letter-spacing:-.04em;margin:0 0 6px}.modal p{margin:0 0 19px;color:var(--muted);font-size:13px}.form-grid{display:grid;gap:12px}.field{display:grid;gap:5px;font-size:12px;color:#dce1d7}.field input,.field select,.field textarea{width:100%;border:1px solid #414c40;border-radius:11px;background:#0f140f;color:var(--text);padding:11px 12px;outline:none}.field textarea{resize:vertical;min-height:76px}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--green)}.form-actions{display:flex;gap:9px;margin-top:17px}.small{font-size:11px;color:var(--muted);margin-top:11px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-    @media(max-width:760px){.hero{grid-template-columns:1fr;padding:64px 0 45px;gap:29px}.grid{grid-template-columns:1fr 1fr}.section-head{align-items:start;flex-direction:column}.section-note{max-width:none}.contact-band{align-items:flex-start;flex-direction:column}.nav{gap:14px}.nav a{font-size:12px}.nav a:nth-child(2){display:none}}
-    @media(max-width:480px){.wrap{width:calc(100% - 30px)}.topbar{height:64px}.brand{font-size:14px}.nav{gap:9px}.nav a{font-size:11px}.nav .nav-cta{padding:8px 10px}.hero{padding-top:48px}h1{font-size:48px}.intro{font-size:15px}.grid{grid-template-columns:1fr}.tile{min-height:0}.section{padding:37px 0}.contact-band{margin:30px 0 55px;padding:22px}.footer{flex-direction:column}.chat{right:12px;bottom:78px;width:calc(100vw - 24px)}.chat-launcher{right:14px;bottom:14px}}
-    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mehmet Michael Ugurlu · IT Security Analyst</title>
+<meta name="description" content="Interactive resume of Mehmet Michael Ugurlu, IT Security Analyst (Security+ certified): SOC operations, incident response, Microsoft security stack.">
+<meta name="theme-color" content="#0a0707">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0707;--panel:#120c0c;--ink:#f1e9dc;--mute:#9a8f86;--red:#ff3d2e;--blue:#3d8bff;--amber:#ff7a1a;--c:#ff3d2e;--line:rgba(255,61,46,.28);
+--mono:'JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;--sans:'Space Grotesk',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.55;overflow-x:hidden}
+canvas#grid{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.05;background-image:repeating-linear-gradient(0deg,#fff 0 1px,transparent 1px 3px)}
+.reticle{position:fixed;left:0;top:0;width:34px;height:34px;margin:-17px 0 0 -17px;border:1px solid var(--c);border-radius:50%;z-index:5;pointer-events:none;opacity:.7;transition:border-color .4s}
+.reticle:before,.reticle:after{content:"";position:absolute;background:var(--c)}
+.reticle:before{left:50%;top:-6px;bottom:-6px;width:1px}.reticle:after{top:50%;left:-6px;right:-6px;height:1px}
+@media (hover:none){.reticle{display:none}}
+.hud{position:fixed;z-index:20;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.hud.tl{left:24px;top:22px;font-family:var(--sans);font-weight:700;font-size:22px;letter-spacing:0}
+.hud.tr{right:24px;top:22px;text-align:right}
+.hud.tr b{color:var(--c);font-weight:500}
+.hud .tag{display:inline-block;margin-top:8px;padding:6px 12px;border:1px solid var(--c);color:var(--c);transition:.4s}
+.rail{position:fixed;right:22px;top:50%;transform:translateY(-50%);z-index:20;display:flex;flex-direction:column;gap:14px;align-items:flex-end}
+.rail a{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--mute);text-decoration:none;display:flex;gap:10px;align-items:center;text-transform:uppercase}
+.rail a i{display:block;width:18px;height:2px;background:#4a3f3a;transition:.3s}
+.rail a span{opacity:0;transition:.3s}
+.rail a:hover span,.rail a.on span{opacity:1}
+.rail a.on{color:var(--c)}.rail a.on i{width:40px;background:var(--c)}
+main{position:relative;z-index:10}
+.sec{min-height:100vh;display:flex;align-items:center;padding:110px 7vw 80px;position:relative}
+.sec .num{position:absolute;left:4vw;top:50%;transform:translateY(-50%);font-size:clamp(120px,18vw,260px);font-weight:700;color:transparent;-webkit-text-stroke:2px rgba(255,61,46,.35);line-height:1;pointer-events:none;user-select:none}
+.card{background:rgba(18,12,12,.92);border:1px solid #2a1d1b;border-top:2px solid var(--c);padding:44px 48px;max-width:860px;margin-left:auto;margin-right:6vw;backdrop-filter:blur(6px);
+opacity:0;transform:translateY(40px);transition:opacity .8s,transform .8s}
+.in .card,.hero.in .heroin{opacity:1;transform:none}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.2em;color:var(--c);text-transform:uppercase;display:flex;align-items:center;gap:14px;margin-bottom:22px}
+.eyebrow:before{content:"";width:34px;height:1px;background:var(--c)}
+h2{font-size:clamp(34px,4.6vw,56px);line-height:1.05;margin-bottom:22px;letter-spacing:-.01em}
+p.lead{font-size:18px;color:#d9cfc2;margin-bottom:26px}
+p.lead b{color:var(--ink)}
+.grp{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute);margin:20px 0 10px;display:flex;gap:10px;align-items:center}
+.grp:before{content:"";width:9px;height:9px;background:var(--g,var(--red))}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-family:var(--mono);font-size:13px;padding:7px 12px;border:1px solid var(--g,var(--red));color:var(--g,var(--red));background:rgba(255,255,255,.015)}
+.chip.w{--g:#d9cfc2}.chip.b{--g:var(--blue)}.chip.r{--g:var(--red)}.chip.a{--g:var(--amber)}
+.role{border-left:2px solid var(--c);padding:2px 0 2px 20px;margin:0 0 30px}
+.role h3{font-size:22px}
+.role .meta{font-family:var(--mono);font-size:12px;color:var(--mute);letter-spacing:.06em;margin:4px 0 12px}
+.role ul{list-style:none}
+.role li{position:relative;padding-left:20px;margin:7px 0;color:#d9cfc2;font-size:15.5px}
+.role li:before{content:">";position:absolute;left:0;color:var(--c);font-family:var(--mono)}
+.now{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.15em;color:#6dffa8;border:1px solid #2a6b46;padding:3px 8px;margin-left:10px;vertical-align:middle}
+.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:8px}
+.tool{border:1px solid #2a1d1b;padding:16px;background:rgba(255,255,255,.015);transition:.25s}
+.tool:hover{border-color:var(--c);transform:translateY(-3px)}
+.tool h4{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--c);margin-bottom:8px;font-weight:500}
+.tool p{font-size:14px;color:#cfc5b8}
+.tl{list-style:none;border-left:1px solid var(--line);margin-left:6px}
+.tl li{position:relative;padding:0 0 20px 24px}
+.tl li:before{content:"";position:absolute;left:-5px;top:7px;width:9px;height:9px;background:var(--c)}
+.tl b{display:block;font-size:17px}.tl span{font-family:var(--mono);font-size:12px;color:var(--mute)}
+/* hero */
+.hero{padding-top:130px}
+.heroin{opacity:0;transform:translateY(30px);transition:opacity .9s,transform .9s;position:relative;width:100%}
+.status{font-family:var(--mono);color:var(--red);font-size:14px;letter-spacing:.14em;margin-bottom:18px}
+.name{font-weight:700;font-size:clamp(64px,14vw,190px);line-height:.88;letter-spacing:-.03em;text-transform:uppercase}
+.name .o{color:transparent;-webkit-text-stroke:3px var(--ink)}
+.roles{font-size:clamp(20px,2.6vw,34px);margin-top:30px}
+.roles i{color:var(--red);font-style:normal;padding:0 8px}
+.sub{font-family:var(--mono);font-size:14px;color:var(--mute);margin:14px 0 28px}
+.sub em{color:#6dffa8;font-style:normal}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{font-family:var(--mono);font-size:14px;letter-spacing:.06em;padding:13px 22px;border:1px solid var(--red);color:var(--ink);text-decoration:none;background:transparent;cursor:pointer;transition:.25s}
+.btn.fill{background:var(--red)}.btn:hover{background:var(--red);box-shadow:0 0 24px rgba(255,61,46,.5)}
+.scroll{position:absolute;left:0;bottom:-70px;font-family:var(--mono);font-size:12px;letter-spacing:.25em;color:#5d524d}
+.badge{position:absolute;right:6vw;top:50%;transform:translateY(-55%);width:min(34vw,400px);aspect-ratio:1}
+.badge svg{width:100%;height:100%;overflow:visible}
+.ring{transform-origin:50% 50%;animation:spin 40s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.lock{position:absolute;left:50%;bottom:-34px;transform:translateX(-50%);font-family:var(--mono);font-size:12px;letter-spacing:.2em;color:var(--red);white-space:nowrap}
+footer{position:relative;z-index:10;text-align:center;font-family:var(--mono);font-size:12px;color:#5d524d;padding:50px 20px 110px;letter-spacing:.12em}
+/* bot */
+.fab{position:fixed;right:24px;bottom:24px;z-index:60;width:58px;height:58px;border:1px solid var(--red);background:var(--bg);color:var(--red);font-size:26px;cursor:pointer;transition:.25s;box-shadow:0 0 0 rgba(255,61,46,0)}
+.fab:hover{background:var(--red);color:#fff;box-shadow:0 0 26px rgba(255,61,46,.6)}
+.bot{position:fixed;right:24px;bottom:96px;z-index:60;width:min(390px,calc(100vw - 32px));height:min(560px,calc(100vh - 130px));background:#0f0909;border:1px solid var(--red);display:none;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.7)}
+.bot.open{display:flex}
+.bot header{padding:14px 16px;border-bottom:1px solid #2a1d1b;display:flex;justify-content:space-between;align-items:center}
+.bot header b{font-family:var(--mono);font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+.bot header small{display:block;font-family:var(--mono);color:#6dffa8;font-size:11px;margin-top:2px}
+.bot header button{background:none;border:0;color:var(--mute);font-size:22px;cursor:pointer}
+.msgs{flex:1;overflow:auto;padding:16px;display:flex;flex-direction:column;gap:10px}
+.m{max-width:88%;padding:10px 13px;font-size:14.5px;line-height:1.45}
+.m.b{background:#1a1111;border:1px solid #2f2220;align-self:flex-start}
+.m.u{background:var(--red);color:#fff;align-self:flex-end}
+.m a{color:var(--blue)}
+.typing{font-family:var(--mono);color:var(--mute);font-size:13px}
+.quick{display:flex;flex-wrap:wrap;gap:6px;padding:0 16px 10px}
+.quick button{font-family:var(--mono);font-size:12px;padding:6px 10px;border:1px solid #3a2926;background:none;color:var(--ink);cursor:pointer}
+.quick button:hover{border-color:var(--red);color:var(--red)}
+.bot form{display:flex;border-top:1px solid #2a1d1b}
+.bot input{flex:1;background:none;border:0;color:var(--ink);padding:14px 16px;font:inherit;font-size:15px;outline:none}
+.bot form button{background:var(--red);border:0;color:#fff;padding:0 18px;font-family:var(--mono);cursor:pointer}
+/* modal */
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:80;display:none;align-items:center;justify-content:center;padding:16px}
+.ov.open{display:flex}
+.modal{background:#0f0909;border:1px solid var(--red);width:min(520px,100%);padding:28px;max-height:92vh;overflow:auto}
+.modal h3{font-size:26px;margin-bottom:6px}
+.modal p{color:var(--mute);font-size:14px;margin-bottom:16px}
+.modal label{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--mute);margin:12px 0 5px}
+.modal input,.modal select,.modal textarea{width:100%;background:#160e0e;border:1px solid #33241f;color:var(--ink);padding:10px;font:inherit;font-size:15px}
+.modal .row{display:flex;gap:10px;margin-top:20px}
+@media (max-width:900px){
+ .badge{position:relative;right:auto;top:auto;transform:none;width:220px;margin:36px 0 0}
+ .card{margin:0;padding:28px 22px}.sec{padding:100px 5vw 60px}.sec .num{display:none}
+ .rail{display:none}.scroll{display:none}.lock{display:none}
+ .hud.tr{font-size:10px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.card,.heroin{opacity:1!important;transform:none!important}}
+</style>
 </head>
 <body>
-  <header class="wrap topbar">
-    <a class="brand" href="#home" aria-label="Mehmet Michael Ugurlu, home"><span class="brand-mark">M</span><span>Mehmet Ugurlu</span></a>
-    <nav class="nav" aria-label="Main navigation"><a href="#profile">Profile</a><a href="#documents">Credentials</a><a href="mailto:ugurlu.michael@gmail.com" class="nav-cta">Get in touch ↗</a></nav>
-  </header>
-  <main>
-    <section class="wrap hero" id="home">
-      <div>
-        <div class="eyebrow"><span class="pulse"></span> Open to a conversation</div>
-        <h1>Mehmet Michael<br><span>Ugurlu.</span></h1>
-        <p class="intro">Welcome to my interactive resume. Explore the information and documents I’ve shared, or ask the resume assistant a question. Recruiters can also send a call or meeting request directly.</p>
-        <div class="hero-actions"><a class="button primary" href="#profile">Explore my profile <span aria-hidden="true">↓</span></a><button class="button secondary" type="button" data-open-chat>Ask my resume bot <span aria-hidden="true">✳</span></button></div>
-      </div>
-      <aside class="hero-card" aria-label="Contact details">
-        <div class="card-kicker">A quick introduction</div><div class="card-name">Mehmet Michael Ugurlu</div><div class="card-sub">Professional profile &amp; credentials</div>
-        <div class="card-divider"></div>
-        <div class="quick-row"><span>Email</span><strong><a href="mailto:ugurlu.michael@gmail.com">ugurlu.michael@gmail.com</a></strong></div>
-        <div class="quick-row"><span>LinkedIn</span><strong><a href="https://linkedin.com/in/michaelugurlu" target="_blank" rel="noopener noreferrer">michaelugurlu ↗</a></strong></div>
-        <div class="quick-row"><span>Call / meeting</span><strong><button type="button" class="text-action" data-open-request>Request a time ↗</button></strong></div>
-      </aside>
-    </section>
-    <section class="wrap section" id="profile">
-      <div class="section-head"><div><div class="section-label">Profile</div><h2>Start with what’s verified.</h2></div><p class="section-note">This page only states details confirmed in the materials supplied. Ask me directly about experience, education, or a specific opportunity.</p></div>
-      <div class="grid">
-        <article class="tile"><div class="tile-icon" aria-hidden="true">✳</div><h3>ISO 27001 document</h3><p>An ISO 27001-related PDF was provided. Contact me to discuss its exact scope, status, or relevance to a role.</p><span class="tag">Information security</span></article>
-        <article class="tile"><div class="tile-icon" aria-hidden="true">▤</div><h3>Education records</h3><p>An official academic transcript was provided. Get in touch if you’d like to discuss education or request relevant details.</p><span class="tag">Transcript supplied</span></article>
-        <article class="tile"><div class="tile-icon" aria-hidden="true">↗</div><h3>Connect directly</h3><p>Reach me by email or LinkedIn. If you prefer a phone conversation, send a call request with a number and a suitable time.</p><span class="tag">Recruiter friendly</span></article>
-      </div>
-      <div class="notice"><strong>Accuracy note:</strong> The supplied PDFs arrived as raw PDF data rather than readable resume text. This first version avoids inventing job titles, dates, degrees, achievements, or a phone number. Email me the details and I can add them here.</div>
-    </section>
-    <section class="wrap section" id="documents">
-      <div class="section-head"><div><div class="section-label">Credentials &amp; records</div><h2>Documents shared</h2></div><p class="section-note">Document contents aren’t published on this page. Contact me if you’d like to discuss or receive a copy.</p></div>
-      <div class="grid">
-        <article class="tile"><div class="tile-icon" aria-hidden="true">◈</div><h3>ISO 27001 PDF</h3><p>File provided: <span lang="en">3_iso27001.pdf</span>. The exact credential details have not been independently transcribed into this page.</p><span class="tag">Document on file</span></article>
-        <article class="tile"><div class="tile-icon" aria-hidden="true">▤</div><h3>Official transcript</h3><p>File provided: <span lang="en">5-Willis_Official_Transcript_Aug2023.pdf</span>. Ask me for the relevant education details.</p><span class="tag">Document on file</span></article>
-        <article class="tile"><div class="tile-icon" aria-hidden="true">▣</div><h3>Resume</h3><p>File provided: <span lang="en">11-Michael_Ugurlu_Resume.pdf</span>. Please contact me for experience and accomplishment details.</p><span class="tag">Resume supplied</span></article>
-      </div>
-    </section>
-    <section class="wrap contact-band" id="contact"><div><div class="section-label">Next step</div><h2>Let’s talk about the role.</h2><p>Send an email, connect on LinkedIn, or request a call / meeting time.</p></div><div class="contact-links"><a class="button primary" href="mailto:ugurlu.michael@gmail.com?subject=Recruiter%20conversation">Email Michael ↗</a><button class="button secondary" type="button" data-open-request>Request a call</button><a class="button secondary" href="https://linkedin.com/in/michaelugurlu" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></section>
-  </main>
-  <footer class="wrap footer"><span>© <span id="year"></span> Mehmet Michael Ugurlu · Interactive resume</span><span>Resume assistant is scripted and answers only from details shown here.</span></footer>
+<canvas id="grid" aria-hidden="true"></canvas>
+<div class="grain"></div>
+<div class="reticle" id="ret"></div>
 
-  <div class="chat-launcher"><button class="button primary" type="button" data-open-chat aria-label="Open resume chat assistant">✳ Ask my resume</button></div>
-  <section class="chat" id="chat" aria-label="Resume chat assistant" aria-hidden="true">
-    <div class="chat-head"><div class="bot-id"><div class="bot-avatar">M</div><div><div class="bot-title">Resume assistant</div><div class="bot-status">Online · answers from this page</div></div></div><button class="close-chat" type="button" data-close-chat aria-label="Close chat">×</button></div>
-    <div class="messages" id="messages" role="log" aria-live="polite" aria-relevant="additions text"><div class="message bot">Hi! I can help with the information on this page, or help you request a call or meeting with Michael. What would you like to know?</div><div class="suggestions"><button class="suggestion" type="button" data-question="What information is available?">What information is available?</button><button class="suggestion" type="button" data-question="How can we arrange a call?">Arrange a call</button><button class="suggestion" type="button" data-question="How can I contact Michael?">Contact details</button></div></div>
-    <form class="chat-compose" id="chat-form"><label class="sr-only" for="chat-input">Ask a question</label><input id="chat-input" type="text" autocomplete="off" placeholder="Ask about the resume…" maxlength="500" required><button class="send" type="submit" aria-label="Send message">Send</button></form>
-  </section>
-  <div class="modal-backdrop" id="request-modal" role="presentation">
-    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="request-title">
-      <div class="modal-top"><div><div class="section-label">Recruiter request</div><h2 id="request-title">Request a call or meeting</h2></div><button class="close-chat" type="button" data-close-request aria-label="Close request form">×</button></div>
-      <p>Share your contact details and a time that works. Your email app will open with a ready-to-send request to Michael; nothing is sent automatically.</p>
-      <form id="request-form"><div class="form-grid">
-        <label class="field">Your name <input name="name" autocomplete="name" required maxlength="100"></label>
-        <label class="field">Work email <input name="email" type="email" autocomplete="email" required maxlength="160"></label>
-        <label class="field">Phone number to call <input name="phone" type="tel" autocomplete="tel" placeholder="Include country code, if relevant" maxlength="50"></label>
-        <label class="field">Preferred conversation<select name="kind"><option>Phone call</option><option>Video meeting</option><option>Either</option></select></label>
-        <label class="field">Suggested time and time zone <input name="time" placeholder="e.g. Tuesday afternoon, Eastern Time" maxlength="120" required></label>
-        <label class="field">Role / note <textarea name="note" maxlength="500" placeholder="Company, role, or anything helpful to know"></textarea></label>
-      </div><div class="form-actions"><button class="button primary" type="submit">Prepare email ↗</button><button class="button secondary" type="button" data-close-request>Cancel</button></div><div class="small">This page cannot place calls or book a calendar slot. Michael will confirm availability by replying to your email.</div></form>
-    </section>
+<div class="hud tl">MU</div>
+<div class="hud tr">Phase <b id="ph">00/06</b> · <span id="phn">Recon</span><br><span class="tag" id="side">Red Team</span></div>
+<nav class="rail" id="rail" aria-label="Sections"></nav>
+
+<main>
+<!-- 00 -->
+<section class="sec hero in" data-c="#ff3d2e" data-name="Recon" data-side="Open Report">
+ <div class="heroin">
+  <div class="status">&gt; Status: Currently at Greenstone Meats</div>
+  <h1 class="name">Mehmet<br><span class="o">Ugurlu</span></h1>
+  <div class="roles">IT Security Analyst <i>/</i> SOC Analyst <i>/</i> Security+ Certified</div>
+  <div class="sub">Niagara region · Toronto, ON · Languages: <em>EN</em> / TR / ES</div>
+  <div class="btns">
+   <a class="btn fill" href="https://linkedin.com/in/michaelugurlu" target="_blank" rel="noopener">LinkedIn ↗</a>
+   <a class="btn" href="https://github.com/ugurlumNIA" target="_blank" rel="noopener">GitHub ↗</a>
+   <a class="btn" href="mailto:ugurlu.michael@gmail.com">Email ↗</a>
+   <button class="btn" data-bot>Ask my resume bot ✳</button>
   </div>
+  <div class="scroll">SCROLL TO START THE REPORT ↓</div>
+  <div class="badge" aria-hidden="true">
+   <svg viewBox="0 0 400 400">
+    <g class="ring" stroke="#ff3d2e" stroke-width="2" id="ticks"></g>
+    <circle cx="200" cy="200" r="150" fill="#120c0c" stroke="#ff3d2e" stroke-width="4"/>
+    <circle cx="200" cy="200" r="138" fill="none" stroke="#3a2420" stroke-width="1" stroke-dasharray="3 6"/>
+    <text x="200" y="232" text-anchor="middle" font-family="Space Grotesk" font-weight="700" font-size="104" fill="#f1e9dc">MU</text>
+    <text x="200" y="262" text-anchor="middle" font-family="JetBrains Mono" font-size="12" letter-spacing="4" fill="#ff3d2e">SEC+ CERTIFIED</text>
+   </svg>
+   <div class="lock">TARGET LOCKED</div>
+  </div>
+ </div>
+</section>
+
+<!-- 01 -->
+<section class="sec" id="s1" data-c="#ff3d2e" data-name="Enumeration" data-side="Profile">
+ <div class="num">01</div>
+ <div class="card">
+  <div class="eyebrow">01 // Enumeration</div>
+  <h2>Watching the logs so the business doesn't have to.</h2>
+  <p class="lead">Cybersecurity analyst with experience in enterprise security operations across <b>gaming and hospitality</b>, now securing a food-manufacturing company as its <b>sole security analyst</b>. I investigate incidents, tune detections, close vulnerabilities and work with infrastructure teams to make fixes stick.</p>
+  <div class="grp" style="--g:var(--blue)">Detect &amp; respond</div>
+  <div class="chips"><span class="chip b">SIEM Monitoring</span><span class="chip b">Incident Response</span><span class="chip b">Threat Hunting</span><span class="chip b">Phishing Analysis</span><span class="chip b">Root Cause Analysis</span><span class="chip b">Data Loss Prevention</span></div>
+  <div class="grp" style="--g:var(--red)">Protect</div>
+  <div class="chips"><span class="chip r">Endpoint Protection</span><span class="chip r">Email Security</span><span class="chip r">Vulnerability Management</span><span class="chip r">MFA &amp; Conditional Access</span><span class="chip r">Intune Policies</span></div>
+  <div class="grp" style="--g:#d9cfc2">Governance</div>
+  <div class="chips"><span class="chip w">NIST CSF</span><span class="chip w">MITRE ATT&amp;CK</span><span class="chip w">Cyber Kill Chain</span><span class="chip w">PCI DSS</span><span class="chip w">ISO 27001</span><span class="chip w">GDPR</span><span class="chip w">IT Risk &amp; Audit</span></div>
+ </div>
+</section>
+
+<!-- 02 -->
+<section class="sec" data-c="#3d8bff" data-name="Detection" data-side="Blue Team">
+ <div class="num">02</div>
+ <div class="card">
+  <div class="eyebrow">02 // Detection</div>
+  <h2>SOC floor experience.</h2>
+  <div class="role">
+   <h3>IT Security Analyst · Fallsview Casino Resort &amp; Niagara Casinos</h3>
+   <div class="meta">MARCH 2025 – SEPTEMBER 1, 2026 · NIAGARA FALLS, ON</div>
+   <ul>
+    <li>Monitored and investigated security events in ReliaQuest GreyMatter SIEM across enterprise systems and networks.</li>
+    <li>Triaged alerts from Microsoft Defender, SentinelOne, Cisco Umbrella, Cisco Secure Email and Forcepoint DLP.</li>
+    <li>Investigated phishing, malware, suspicious email and endpoint incidents; took part in escalation and incident response.</li>
+    <li>Tracked Tenable findings through remediation and validation; ran tool health checks and agent coverage reviews.</li>
+    <li>Managed Forcepoint DLP incidents, policy tuning and alert analysis; supported phishing simulations and user education.</li>
+   </ul>
+  </div>
+  <div class="role">
+   <h3>SOC Analyst · CyberNow Labs</h3>
+   <div class="meta">DEC 2023 – MAR 2025 · STERLING, VA, US</div>
+   <ul>
+    <li>Configured SIEM logging and alerting; analysed network infrastructure to find likely entry points.</li>
+    <li>Operated McAfee DLP, SentinelOne and Microsoft Defender; worked in Azure and Docker environments.</li>
+    <li>Handled incidents and vulnerabilities in ServiceNow SIR, Threat Intelligence and Vulnerability Response; Jira ticket triage.</li>
+    <li>Built test labs with Kali, Parrot, Wireshark, VMware, VirtualBox and Hyper-V.</li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<!-- 03 -->
+<section class="sec" data-c="#ff7a1a" data-name="Hardening" data-side="Current Role">
+ <div class="num">03</div>
+ <div class="card">
+  <div class="eyebrow">03 // Hardening</div>
+  <h2>Building the security function from scratch.</h2>
+  <div class="role">
+   <h3>IT Security Analyst · Greenstone Meats <span class="now">NOW</span></h3>
+   <div class="meta">SEPTEMBER 8, 2026 – PRESENT · TORONTO, ON</div>
+   <ul>
+    <li>Sole IT security analyst, owning security operations, policy and risk in a Microsoft 365 E5 environment.</li>
+    <li>Leading a company-wide MFA rollout with Entra ID Conditional Access, Microsoft Authenticator and SMS, including pilot groups and staff communication.</li>
+    <li>Designing and deploying Intune endpoint policies: Attack Surface Reduction, USB device control, and Defender antivirus policy conflict fixes.</li>
+    <li>Strengthening Defender email and SharePoint protection; running the quarantine and release-request process and investigating spoofed and phishing emails.</li>
+    <li>Running monthly phishing simulations and security reports that track reporting and click rates.</li>
+    <li>Establishing vulnerability management with Microsoft Defender Vulnerability Management, third-party patching via Intune and Windows Autopatch.</li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<!-- 04 -->
+<section class="sec" data-c="#ff7a1a" data-name="Arsenal" data-side="Toolkit">
+ <div class="num">04</div>
+ <div class="card">
+  <div class="eyebrow">04 // Arsenal</div>
+  <h2>Tools I work with.</h2>
+  <div class="tools">
+   <div class="tool"><h4>SIEM</h4><p>IBM QRadar, Splunk Enterprise Security, ReliaQuest GreyMatter</p></div>
+   <div class="tool"><h4>EDR / XDR</h4><p>Microsoft Defender, SentinelOne, CrowdStrike Falcon, McAfee, XSOAR</p></div>
+   <div class="tool"><h4>Email &amp; Web</h4><p>Proofpoint, Cisco Secure Email, Cisco Umbrella, Zscaler</p></div>
+   <div class="tool"><h4>Vulnerability</h4><p>Tenable.io, Nessus, Defender Vulnerability Mgmt, Netsparker</p></div>
+   <div class="tool"><h4>Identity &amp; Endpoint</h4><p>Entra ID, Intune, SailPoint IdentityIQ, PKI &amp; digital certificates</p></div>
+   <div class="tool"><h4>Network</h4><p>Fortigate, Wireshark, OSI &amp; TCP/IP, DNS, OpManager</p></div>
+   <div class="tool"><h4>Intel &amp; OSINT</h4><p>VirusTotal, Hybrid Analysis, Joe Sandbox, Urlscan.io, AbuseIPDB, MXToolbox, CyberChef, Cisco Talos, SOCRadar</p></div>
+   <div class="tool"><h4>Ticketing</h4><p>ServiceNow, Jira, ManageEngine SDP, Ivanti, IBM Resilient</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- 05 -->
+<section class="sec" data-c="#f2ead8" data-name="Training" data-side="Always Learning">
+ <div class="num">05</div>
+ <div class="card">
+  <div class="eyebrow">05 // Training</div>
+  <h2>Credentials &amp; background.</h2>
+  <div class="grp" style="--g:var(--blue)">Certifications</div>
+  <ul class="tl">
+   <li><b>CompTIA Security+</b><span>Active through July 2028</span></li>
+   <li><b>CompTIA A+</b><span>Certified</span></li>
+   <li><b>ISO 27001 Foundation</b><span>Certified</span></li>
+  </ul>
+  <div class="grp" style="--g:var(--red)">Education</div>
+  <ul class="tl">
+   <li><b>M.Sc. Digital Forensics &amp; Information Security</b><span>Niagara University · expected 2026</span></li>
+   <li><b>Cyber Security Analyst Diploma</b><span>Willis College · May 2021 – Aug 2022</span></li>
+   <li><b>Cyber Security Fundamentals &amp; Advanced</b><span>York University · Jan 2019</span></li>
+   <li><b>B.Sc. Information Technology</b><span>Yildiz Technical University · 1998 – 2003</span></li>
+  </ul>
+  <div class="grp" style="--g:#d9cfc2">Earlier career</div>
+  <ul class="tl">
+   <li><b>IT Support Specialist</b><span>Computer Geeks on Call · Jan 2023</span></li>
+   <li><b>IT Support Specialist &amp; Security</b><span>Woodland Design &amp; Cabinets · Dec 2020 – Jan 2023</span></li>
+   <li><b>Information Security &amp; Database Administrator</b><span>Gulistan Restaurant Chain · 2016 – 2018</span></li>
+  </ul>
+  <p class="lead" style="margin-top:6px;font-size:15px">Award: Best Technical Instructor in Antalya City, Turkey (Ministry of Education of Turkey, 2012).</p>
+ </div>
+</section>
+
+<!-- 06 -->
+<section class="sec" data-c="#ff3d2e" data-name="Exfil" data-side="Engagement Complete">
+ <div class="num">06</div>
+ <div class="card">
+  <div class="eyebrow">06 // Exfil</div>
+  <h2>Let's talk.</h2>
+  <p class="lead">Report complete. If you'd like to discuss a role, a project or a question about my background, reach out directly or ask the resume bot.</p>
+  <div class="btns">
+   <a class="btn fill" href="mailto:ugurlu.michael@gmail.com">ugurlu.michael@gmail.com ↗</a>
+   <a class="btn" href="https://linkedin.com/in/michaelugurlu" target="_blank" rel="noopener">LinkedIn ↗</a>
+   <button class="btn" id="reqBtn">Request a call ↗</button>
+  </div>
+ </div>
+</section>
+</main>
+<footer>// END OF REPORT · MEHMET MICHAEL UGURLU · THE RESUME BOT ANSWERS ONLY FROM THIS PAGE</footer>
+
+<button class="fab" id="fab" aria-label="Open resume bot">✳</button>
+<div class="bot" id="bot" role="dialog" aria-label="Resume assistant">
+ <header><div><b>Resume assistant</b><small>● online · answers from this page</small></div><button id="xBot" aria-label="Close">×</button></header>
+ <div class="msgs" id="msgs"></div>
+ <div class="quick" id="quick"></div>
+ <form id="form"><input id="inp" placeholder="Ask a question…" autocomplete="off"><button>Send</button></form>
+</div>
+
+<div class="ov" id="ov">
+ <form class="modal" id="req">
+  <h3>Request a call or meeting</h3>
+  <p>This page can't book calendar slots. It prepares an email, and Mehmet will confirm by reply.</p>
+  <label>Name</label><input id="rn" required>
+  <label>Work email</label><input id="re" type="email" required>
+  <label>Conversation type</label><select id="rt"><option>Phone call</option><option>Video meeting</option><option>Either</option></select>
+  <label>Suggested time &amp; time zone</label><input id="rw" placeholder="e.g. Tue 2pm ET">
+  <label>Role / note</label><textarea id="ro" rows="3"></textarea>
+  <div class="row"><button class="btn fill" type="submit">Prepare email ↗</button><button class="btn" type="button" id="rx">Cancel</button></div>
+ </form>
+</div>
+
 <script>
-  const chat=document.getElementById('chat'), messages=document.getElementById('messages'), input=document.getElementById('chat-input');
-  const modal=document.getElementById('request-modal');
-  document.getElementById('year').textContent=new Date().getFullYear();
-  function openChat(){chat.classList.add('open');chat.setAttribute('aria-hidden','false');setTimeout(()=>input.focus(),30)}
-  function closeChat(){chat.classList.remove('open');chat.setAttribute('aria-hidden','true')}
-  document.querySelectorAll('[data-open-chat]').forEach(x=>x.addEventListener('click',openChat));
-  document.querySelector('[data-close-chat]').addEventListener('click',closeChat);
-  function addMessage(text,kind){const el=document.createElement('div');el.className='message '+kind;el.textContent=text;messages.appendChild(el);messages.scrollTop=messages.scrollHeight}
-  function answer(q){const s=q.toLowerCase();if(/call|phone|meeting|schedule|availability|book|arrange|interview/.test(s))return 'You can request a phone call or video meeting using the “Request a call” button. Add your email, a phone number if you want a call, and a suggested time with time zone. The page prepares an email for you to review and send; Michael will confirm a time. It cannot place calls or book a slot automatically.';if(/contact|email|linkedin|reach|connect/.test(s))return 'You can email Michael at ugurlu.michael@gmail.com or connect on LinkedIn at linkedin.com/in/michaelugurlu. There is no phone number listed on this page; use the call request form to share the number where you would like Michael to call.';if(/experience|work history|career|job|employment|achievement|accomplish/.test(s))return 'The resume PDF was supplied, but its text was not readable in the materials received. I don’t want to guess at job titles, employers, dates, or accomplishments. Please email Michael at ugurlu.michael@gmail.com to ask about the experience relevant to your role.';if(/education|degree|school|university|transcript/.test(s))return 'An official transcript PDF was supplied, but its contents were not readable here, so I can’t reliably state a school, degree, or dates. Please contact Michael directly for the details.';if(/iso|27001|certif|security/.test(s))return 'An ISO 27001-related PDF named 3_iso27001.pdf was supplied. The specific credential, status, and dates have not been transcribed into this page. Please confirm those details with Michael directly.';if(/skill|technology|technical|language/.test(s))return 'This page does not yet list verified skills or technologies. I won’t infer them from the document filenames. Contact Michael at ugurlu.michael@gmail.com for details relevant to your opening.';if(/salary|location|relocat|remote|work authorization/.test(s))return 'That detail is not listed on this page. Please ask Michael directly at ugurlu.michael@gmail.com.';if(/available|resume|information|tell me|about michael|about michael|profile/.test(s))return 'This page confirms Michael’s name, email, LinkedIn profile, and that he supplied a resume, an official transcript, and an ISO 27001-related PDF. The PDFs arrived without readable text, so career and education details are not yet published. Ask me about contacting Michael or requesting a call.';return 'I can answer questions about the contact information, the supplied documents, or arranging a call or meeting. For resume details not yet transcribed on this page, contact Michael at ugurlu.michael@gmail.com.'}
-  function sendQuestion(text){const q=text.trim();if(!q)return;addMessage(q,'user');setTimeout(()=>addMessage(answer(q),'bot'),180)}
-  document.getElementById('chat-form').addEventListener('submit',e=>{e.preventDefault();sendQuestion(input.value);input.value='';input.focus()});
-  messages.addEventListener('click',e=>{const b=e.target.closest('[data-question]');if(b)sendQuestion(b.dataset.question)});
-  const openRequest=()=>{modal.classList.add('open');setTimeout(()=>modal.querySelector('input').focus(),30)};
-  const closeRequest=()=>modal.classList.remove('open');
-  document.querySelectorAll('[data-open-request]').forEach(x=>x.addEventListener('click',openRequest));
-  document.querySelectorAll('[data-close-request]').forEach(x=>x.addEventListener('click',closeRequest));
-  modal.addEventListener('click',e=>{if(e.target===modal)closeRequest()});
-  document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeChat();closeRequest()}});
-  document.getElementById('request-form').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.currentTarget);const subject=`Recruiter ${d.get('kind').toLowerCase()} request from ${d.get('name')}`;const body=[`Hello Michael,`,``,`I'd like to arrange a ${d.get('kind').toLowerCase()}.`,``,`Name: ${d.get('name')}`,`Email: ${d.get('email')}`,`Phone: ${d.get('phone')||'Not provided'}`,`Preferred time: ${d.get('time')}`,`Role / note: ${d.get('note')||'Not provided'}`,``,`Please let me know what time works for you.`].join('\n');window.location.href=`mailto:ugurlu.michael@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;closeRequest()});
+/* ---------- background grid ---------- */
+(function(){
+ const c=document.getElementById('grid'),x=c.getContext('2d');let W,H,t=0,pts=[];
+ function size(){W=c.width=innerWidth*devicePixelRatio;H=c.height=innerHeight*devicePixelRatio;
+  pts=Array.from({length:70},()=>({x:Math.random()*W,y:Math.random()*H*.6,s:Math.random()*1.6+.4,v:Math.random()*.15+.03}))}
+ size();addEventListener('resize',size);
+ const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+ function draw(){
+  x.clearRect(0,0,W,H);const hz=H*.58,vx=W*.5;
+  const col=getComputedStyle(document.documentElement).getPropertyValue('--c').trim()||'#ff3d2e';
+  x.strokeStyle=col;x.globalAlpha=.2;x.lineWidth=devicePixelRatio;
+  for(let i=-24;i<=24;i++){x.beginPath();x.moveTo(vx+i*W*.02,hz);x.lineTo(vx+i*W*.16,H);x.stroke()}
+  for(let i=0;i<14;i++){const p=((i+t%1)/14);const y=hz+Math.pow(p,2.2)*(H-hz);x.globalAlpha=.06+p*.2;x.beginPath();x.moveTo(0,y);x.lineTo(W,y);x.stroke()}
+  x.globalAlpha=.5;x.fillStyle='#f1e9dc';
+  pts.forEach(p=>{p.y-=p.v;if(p.y<0){p.y=hz;p.x=Math.random()*W}x.fillRect(p.x,p.y,p.s,p.s)});
+  x.globalAlpha=1;if(!reduce){t+=.006;requestAnimationFrame(draw)}
+ }
+ draw();
+})();
+/* ---------- reticle ---------- */
+const ret=document.getElementById('ret');
+addEventListener('mousemove',e=>{ret.style.transform=`translate(${e.clientX}px,${e.clientY}px)`});
+/* ---------- badge ticks ---------- */
+(function(){let s='';for(let i=0;i<72;i++){const a=i*5*Math.PI/180,l=i%6?8:16;
+ s+=`<line x1="${200+Math.cos(a)*172}" y1="${200+Math.sin(a)*172}" x2="${200+Math.cos(a)*(172+l)}" y2="${200+Math.sin(a)*(172+l)}"/>`}
+ document.getElementById('ticks').innerHTML=s})();
+/* ---------- phases / rail ---------- */
+const secs=[...document.querySelectorAll('main .sec')],rail=document.getElementById('rail');
+secs.forEach((s,i)=>{const a=document.createElement('a');a.href='#';a.innerHTML=`<span>${String(i).padStart(2,'0')} ${s.dataset.name}</span><i></i>`;
+ a.onclick=e=>{e.preventDefault();s.scrollIntoView({behavior:'smooth'})};rail.appendChild(a)});
+const links=[...rail.children];
+const io=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting){
+ en.target.classList.add('in');const i=secs.indexOf(en.target),d=en.target.dataset;
+ document.documentElement.style.setProperty('--c',d.c);
+ document.getElementById('ph').textContent=String(i).padStart(2,'0')+'/06';
+ document.getElementById('phn').textContent=d.name;document.getElementById('side').textContent=d.side;
+ links.forEach((l,j)=>l.classList.toggle('on',i===j))}})},{threshold:.4});
+secs.forEach(s=>io.observe(s));
+/* ---------- bot ---------- */
+const KB=[
+ {k:['current','now','greenstone','today','present','role','job','work'],a:'Right now Mehmet is IT Security Analyst at <b>Greenstone Meats</b> (Toronto, ON), since September 8, 2026. He is the sole security analyst: MFA rollout with Entra ID Conditional Access, Intune endpoint policies (Attack Surface Reduction, USB control), Defender email protection, phishing simulations and vulnerability management.'},
+ {k:['fallsview','casino','niagara casinos','previous','last job'],a:'At <b>Fallsview Casino Resort &amp; Niagara Casinos</b> (March 2025 to September 1, 2026) he monitored ReliaQuest GreyMatter SIEM, triaged Defender, SentinelOne, Cisco Umbrella, Cisco Secure Email and Forcepoint DLP alerts, handled phishing and endpoint incidents, and tracked Tenable findings to remediation.'},
+ {k:['cybernow','soc analyst','virginia','sterling','dec 2023'],a:'At <b>CyberNow Labs</b> (Dec 2023 to Mar 2025) he worked as a SOC analyst: SIEM logging and alerting, McAfee DLP, SentinelOne, Defender, ServiceNow SIR / Vulnerability Response, Azure and Docker, plus Kali and Wireshark labs.'},
+ {k:['experience','career','history','background','years'],a:'Timeline: Greenstone Meats (Sep 2026 to now) → Fallsview / Niagara Casinos (Mar 2025 to Sep 2026) → CyberNow Labs (Dec 2023 to Mar 2025) → IT support roles in Toronto (2020 to 2023) → Information Security &amp; DB Administrator in Istanbul (2016 to 2018). He started in networking, moved to IT support and then to cybersecurity.'},
+ {k:['skill','tool','stack','technolog','know','siem','edr'],a:'SIEM: QRadar, Splunk ES, ReliaQuest GreyMatter. EDR: Defender, SentinelOne, CrowdStrike, McAfee. Email: Proofpoint, Cisco Secure Email. Vulnerability: Tenable.io, Nessus, Defender Vulnerability Management. Identity/endpoint: Entra ID, Intune, SailPoint. See section 04 for the full list.'},
+ {k:['microsoft','defender','intune','entra','m365','e5','conditional'],a:'Microsoft security stack is his current daily work: Defender (endpoint, email, vulnerability management), Intune policies, Entra ID Conditional Access and MFA, Windows Autopatch.'},
+ {k:['mfa','multi-factor','authenticator'],a:'He is leading the MFA rollout at Greenstone Meats with Entra ID Conditional Access, Microsoft Authenticator and SMS, with pilot groups and staff communication.'},
+ {k:['phish','email','simulation','awareness'],a:'He investigates phishing and spoofed email, manages Defender quarantine and release requests, and runs monthly phishing simulations with reporting on report and click rates.'},
+ {k:['vulnerab','tenable','nessus','patch','scan'],a:'Vulnerability work: Tenable findings review and remediation tracking at Fallsview; at Greenstone he is building the programme on Microsoft Defender Vulnerability Management with Intune and Autopatch for patching.'},
+ {k:['cert','security+','comptia','a+','iso','27001'],a:'Certifications: <b>CompTIA Security+</b> (active through July 2028), <b>CompTIA A+</b> and <b>ISO 27001 Foundation</b>.'},
+ {k:['educat','degree','school','universit','college','masters','msc','study','diploma'],a:'M.Sc. Digital Forensics &amp; Information Security (Niagara University, expected 2026); Cyber Security Analyst diploma (Willis College, 2021 to 2022); Cyber Security certificate (York University, 2019); B.Sc. Information Technology (Yildiz Technical University, 2003).'},
+ {k:['language','speak','turkish','spanish','english'],a:'Languages listed on the resume: Turkish and Spanish (fluent), and he works in English.'},
+ {k:['award','recogni'],a:'Best Technical Instructor in Antalya City, Turkey, awarded by the Ministry of Education of Turkey in 2012.'},
+ {k:['where','location','based','toronto','live','relocat'],a:'Based in the Niagara region of Ontario; current role is in Toronto, ON.'},
+ {k:['call','meeting','meet','schedule','interview','book','arrange'],a:'Happy to talk. <a href="#" data-req>Request a call or meeting</a> and the page will prepare an email; Mehmet confirms by reply.'},
+ {k:['contact','email','mail','linkedin','github','reach','phone'],a:'Email: <a href="mailto:ugurlu.michael@gmail.com">ugurlu.michael@gmail.com</a><br>LinkedIn: <a href="https://linkedin.com/in/michaelugurlu" target="_blank" rel="noopener">linkedin.com/in/michaelugurlu</a><br>GitHub: <a href="https://github.com/ugurlumNIA" target="_blank" rel="noopener">ugurlumNIA</a>'},
+ {k:['hello','hi ','hey','selam','merhaba'],a:'Hi! Ask me about Mehmet\'s experience, tools, certifications, education or how to contact him.'},
+ {k:['who','about','summary','profile','introduce'],a:'Mehmet Michael Ugurlu is a cybersecurity analyst (Security+ certified) with SOC, incident response, email security, DLP and vulnerability management experience in gaming, hospitality and food manufacturing. Currently the sole security analyst at Greenstone Meats.'}
+];
+const msgs=document.getElementById('msgs'),bot=document.getElementById('bot'),inp=document.getElementById('inp');
+function add(t,w,html){const d=document.createElement('div');d.className='m '+w;html?d.innerHTML=t:d.textContent=t;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;return d}
+function answer(q){const s=' '+q.toLowerCase()+' ';let best=null,bs=0;
+ KB.forEach(e=>{let n=0;e.k.forEach(k=>{if(s.includes(k))n+=k.length>3?2:1});if(n>bs){bs=n;best=e}});
+ return best?best.a:'I can only answer from what is on this page. Try asking about his current role, tools, certifications, education or contact details, or <a href="mailto:ugurlu.michael@gmail.com">email him</a> directly.'}
+function ask(q){if(!q.trim())return;add(q,'u');const t=add('…','b');t.classList.add('typing');
+ setTimeout(()=>{t.classList.remove('typing');t.innerHTML=answer(q);msgs.scrollTop=msgs.scrollHeight},450)}
+document.getElementById('form').onsubmit=e=>{e.preventDefault();ask(inp.value);inp.value=''};
+const quick=document.getElementById('quick');
+['Current role','Skills & tools','Certifications','Arrange a call','Contact details'].forEach(q=>{const b=document.createElement('button');b.textContent=q;b.type='button';b.onclick=()=>ask(q);quick.appendChild(b)});
+function openBot(){bot.classList.add('open');if(!msgs.children.length)add('Hi, I\'m the resume assistant. I answer only from the details on this page. What would you like to know about Mehmet?','b');inp.focus()}
+document.getElementById('fab').onclick=()=>bot.classList.contains('open')?bot.classList.remove('open'):openBot();
+document.getElementById('xBot').onclick=()=>bot.classList.remove('open');
+document.querySelectorAll('[data-bot]').forEach(b=>b.onclick=openBot);
+msgs.addEventListener('click',e=>{if(e.target.matches('[data-req]')){e.preventDefault();ov.classList.add('open')}});
+/* ---------- request modal ---------- */
+const ov=document.getElementById('ov');
+document.getElementById('reqBtn').onclick=()=>ov.classList.add('open');
+document.getElementById('rx').onclick=()=>ov.classList.remove('open');
+ov.addEventListener('click',e=>{if(e.target===ov)ov.classList.remove('open')});
+document.getElementById('req').onsubmit=e=>{e.preventDefault();const g=i=>document.getElementById(i).value;
+ const body=`Name: ${g('rn')}\nEmail: ${g('re')}\nType: ${g('rt')}\nSuggested time: ${g('rw')}\nNote: ${g('ro')}`;
+ location.href='mailto:ugurlu.michael@gmail.com?subject='+encodeURIComponent('Recruiter conversation')+'&body='+encodeURIComponent(body);ov.classList.remove('open')};
 </script>
-<style>.text-action{border:0;background:transparent;color:var(--green);padding:0;cursor:pointer;font-size:13px;font-weight:650}.text-action:hover{text-decoration:underline}</style>
 </body>
 </html>
