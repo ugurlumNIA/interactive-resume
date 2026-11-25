@@ -379,7 +379,7 @@ function answer(q){const s=' '+q.toLowerCase()+' ';let best=null,bs=0;
  KB.forEach(e=>{let n=0;e.k.forEach(k=>{if(s.includes(k))n+=k.length>3?2:1});if(n>bs){bs=n;best=e}});
  return best?best.a:'I can only answer from what is on this page. Try asking about his current role, tools, certifications, education or contact details, or <a href="mailto:ugurlu.michael@gmail.com">email him</a> directly.'}
 /* Set BOT_API to your Cloudflare Worker URL to enable the AI-powered bot. Leave '' for scripted answers only. */
-const BOT_API='';
+const BOT_API='https://solitary-math-626d.mehmet-ugurlu.workers.dev/';
 const hist=[];
 function esc(t){return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
 function linkify(t){return esc(t).replace(/(https?:\/\/[^\s<]+)/g,'<a href="$1" target="_blank" rel="noopener">$1</a>').replace(/([\w.+-]+@[\w-]+\.[\w.]+)/g,'<a href="mailto:$1">$1</a>').replace(/\n/g,'<br>')}
