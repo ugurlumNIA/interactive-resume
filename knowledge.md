@@ -19,6 +19,11 @@ Designs and deploys Intune endpoint policies: Attack Surface Reduction, USB devi
 Strengthens Microsoft Defender email and SharePoint protection; manages the quarantine and release-request process; investigates spoofed and phishing emails.
 Runs monthly phishing simulations and writes monthly phishing and IT security reports.
 Establishing vulnerability management with Microsoft Defender Vulnerability Management; patching third-party apps through Intune app deployment and Windows Autopatch.
+Michael is the only person responsible for all IT security at Greenstone Meats, not just the Microsoft security tools. He covers the whole security function: operations, policy, risk, and security projects across the company.
+The Microsoft 365 E5 work (Defender, Intune, Entra ID) is one part of that role, alongside everything else security-related at the company.
+Manages Sophos endpoint security across the company.
+Runs email phishing simulations and protections with CIRA.
+Manages the Meraki firewall and WireGuard VPN protocols.
 IT Security Analyst, Fallsview Casino Resort & Niagara Casinos, Niagara Falls, ON (March 2025 to September 1, 2026)
 Monitored and investigated events in ReliaQuest GreyMatter SIEM.
 Triaged alerts from Microsoft Defender, SentinelOne, Cisco Umbrella, Cisco Secure Email and Forcepoint DLP.
